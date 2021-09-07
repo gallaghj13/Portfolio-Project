@@ -36,6 +36,7 @@ body {
     justify-content: space-between;
     height: 100%;
     padding-right: 3rem;
+    padding-left: 3rem;
 } 
 
 .header nav li {
@@ -63,7 +64,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    margin: 2rem 0 2rem 0;
+    margin: 3rem 0 3rem 0;
 
 }
 
@@ -72,13 +73,89 @@ body {
     flex: 1 0 25%;
     font-size: 2.5rem;
     border-right: solid black;
+    text-align: end;
+    padding-right: 2rem;
 }
 
 .content p {
     flex: 1 0 75%;
-    padding: 0 3rem 0 1.5rem;
+    padding: 0 5rem 0 1.5rem;
+}
+
+.content ul {
+    flex: 1 0 75%;
+    padding: 0 5rem 0 1.5rem;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.content ul li a {
+    color: rgb(48, 48, 59);
 }
 .content div {
     flex: 1 0 75%;
-    padding: 0 3rem 0 1.5rem;
+    padding: 0 5rem 0 1.5rem;
+}
+
+/* Work Styling */
+#larger-img {
+    position: relative;
+    margin-bottom: .5rem;
+    border:rgb(48, 48, 59) solid .25rem;
+    height: 23rem;
+    width: 98.5%;
+}
+
+img:hover {
+    opacity: .75;
+}
+
+div h3 {
+    position: absolute;
+    top: 5rem;
+    background-color: rgb(96, 169, 211);
+    color: rgb(48, 48, 59);   
+}
+
+.project img {
+    margin: .5rem;
+    border:rgb(48, 48, 59) solid .25rem;
+    height: 150px;
+    width: 47.6%;
+}
+
+@media screen and (max-width: 1150px) {
+    .project img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .header h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content h2 {
+        flex: 1 0 100%;
+        text-align: left;
+        border-right:none;
+        border-bottom: solid black;
+        margin: 0;
+        padding: 1rem 0 1rem 0;
+    }
+
+    .content p {
+        padding: 1rem 5rem 0 1.5rem;
+    }
+
+    .content ul {
+        padding: 1rem 3rem 1rem 3rem;
+        font-size: 2rem;
+    }
 }
