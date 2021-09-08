@@ -10,11 +10,13 @@ The webiste is fairly straightforward. The header includes a navigation bar that
 
 ## Credits
 
--Tutor: Aaron Centeno
--VSCode
--MDN Web Docs
--Net Ninja CSS Tutorial
+- Tutor: Aaron Centeno
+- VSCode
+- MDN Web Docs
+- Net Ninja CSS Tutorial
 
 ## Links
 
-URL for the deployed website:
+URL for the deployed website: https://gallaghj13.github.io/Portfolio-Project/
+
+
