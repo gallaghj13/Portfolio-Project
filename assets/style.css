@@ -17,6 +17,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin: 0rem;
     padding: .5rem 0 .5rem 0;
     background-color: rgb(48, 48, 59);
     color: rgb(96, 169, 211);
@@ -40,7 +41,7 @@ body {
 } 
 
 .header nav li {
-    display: inline-block; 
+    float: right; 
     font-size: 1.25rem;
     margin-right: .75rem;
     padding-right: .75rem;
@@ -114,12 +115,19 @@ img:hover {
     opacity: .75;
 }
 
-div h3 {
-    position: absolute;
-    top: 5rem;
+
+/* h3 {
+    position: relative;
+    top: -4rem;
+    left: .75rem;
+    padding: 0 1rem 0 1rem;
+    width: fit-content;
+    line-height: 2;
+    border: rgb(48, 48, 59) solid .2rem;
+    border-left: none;
     background-color: rgb(96, 169, 211);
     color: rgb(48, 48, 59);   
-}
+} */
 
 .project img {
     margin: .5rem;
@@ -128,19 +136,36 @@ div h3 {
     width: 47.6%;
 }
 
+/* Media Queries */
 @media screen and (max-width: 1150px) {
     .project img {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 855px) {
+    
     .header h1 {
         text-align: center;
+        width: 100%;
     }
+
+    .header nav {
+        width: 100%;
+        justify-content: space-evenly;
+        padding: .5rem;
+    }
+
+    .header nav li {
+        padding-right: 2rem;
+    }
+   
 }
 
 @media screen and (max-width: 800px) {
+    .content {
+        margin: 0;
+    }
     .content h2 {
         flex: 1 0 100%;
         text-align: left;
@@ -155,7 +180,16 @@ div h3 {
     }
 
     .content ul {
-        padding: 1rem 3rem 1rem 3rem;
+        padding: 1rem 3rem 1rem 0rem;
         font-size: 2rem;
     }
+
+    .content ul li {
+        width: 98%;
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    
 }
