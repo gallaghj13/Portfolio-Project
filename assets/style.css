@@ -70,7 +70,6 @@ body {
 }
 
 .content h2 {
-    /* display: inline-block; */
     flex: 1 0 25%;
     font-size: 2.5rem;
     border-right: solid black;
@@ -115,10 +114,20 @@ img:hover {
     opacity: .75;
 }
 
-
-/* h3 {
+.project-tag {
     position: relative;
-    top: -4rem;
+}
+
+.project-tag2 {
+    display: inline-block;
+    width: 49%;
+    position: relative;
+    
+}
+
+.project-tag h3 {
+    position: absolute;
+    top: 18rem;
     left: .75rem;
     padding: 0 1rem 0 1rem;
     width: fit-content;
@@ -127,18 +136,32 @@ img:hover {
     border-left: none;
     background-color: rgb(96, 169, 211);
     color: rgb(48, 48, 59);   
-} */
+}
+
+.project-tag2 h3 {
+    position: absolute;
+    top: 6rem;
+    left: .75rem;
+    padding: 0 1rem 0 1rem;
+    width: fit-content;
+    line-height: 2;
+    border: rgb(48, 48, 59) solid .2rem;
+    border-left: none;
+    background-color: rgb(96, 169, 211);
+    color: rgb(48, 48, 59); 
+}
 
 .project img {
     margin: .5rem;
     border:rgb(48, 48, 59) solid .25rem;
     height: 150px;
-    width: 47.6%;
+    width: 100%;
 }
 
+
 /* Media Queries */
-@media screen and (max-width: 1150px) {
-    .project img {
+@media screen and (max-width: 1000px) {
+    .project-tag2 {
         width: 100%;
     }
 }
@@ -191,5 +214,5 @@ img:hover {
 }
 
 @media screen and (max-width: 550px) {
-    
+
 }
