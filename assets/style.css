@@ -209,10 +209,35 @@ img:hover {
 
     .content ul li {
         width: 98%;
-        padding-bottom: 2rem;
+        padding: 0 0 2rem 2rem;
     }
 }
 
 @media screen and (max-width: 550px) {
+   
+    #larger-img {
+        height: 15rem;
+    }
 
+    .project-tag h3 {
+        top: 12rem;
+    }
+
+    .content ul li {
+        font-size: 1.25rem;
+    }
+
+    .header {
+        padding: .5rem 0 0 0;
+    }
+
+    .header nav {
+        padding: 0;
+    }
+    .header nav li {
+        display: inline-flex;
+        justify-content: flex-start;
+        width: 40%;
+        padding: .5rem 1rem .5rem 0rem;
+    }
 }

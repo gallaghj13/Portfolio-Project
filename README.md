@@ -19,4 +19,5 @@ The webiste is fairly straightforward. The header includes a navigation bar that
 
 URL for the deployed website: https://gallaghj13.github.io/Portfolio-Project/
 
+![](./assets/images/portfolio.gif)
 
